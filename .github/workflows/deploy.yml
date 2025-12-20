@@ -1,4 +1,0 @@
-"scripts": {
-  "build": "react-scripts build",
-  "postbuild": "rm -rf docs && cp -r build docs"
-}
