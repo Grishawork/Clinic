@@ -1,0 +1,75 @@
+header{
+    padding-top: 21px;
+    padding-bottom: 24px;
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 23px;
+        .geo{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--gray-text);
+        }
+        .version-site{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            color: var(--gray-text);
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 12px;
+            }
+        }
+        .header-record{
+            display: flex;
+            align-items: center;
+            a{
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 140%;
+                color: #000;
+                margin-right: 20px;
+            }
+            button{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--white);
+                background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                border-radius: 30px;
+                padding: 8px 28px;
+            }
+        }
+    }
+    .header-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-menu{
+            display: flex;
+            li{
+                margin-right: 34px;
+                a{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: var(--black);
+                }
+            }
+            li:last-child{
+               margin-right: 0; 
+            }
+        }
+        .mobile-nav-btn{
+            display: none;
+        }
+    }
+}
