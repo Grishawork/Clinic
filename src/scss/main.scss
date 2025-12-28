@@ -9,3 +9,13 @@
 
 /* Blocks */
 @import "./blocks/*.scss";
+
+.banner{
+    background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+    .banner-zerg{
+        background-image: url(../img/banner-zer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+}
