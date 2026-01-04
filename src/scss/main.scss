@@ -9,7 +9,13 @@
 
 /* Blocks */
 @import "./blocks/*.scss";
-
+.title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: var(--black);
+}
 .banner{
     background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
     .banner-zerg{
@@ -84,4 +90,29 @@
 }
 .swiper-pagination-bullet-active{
     background: var(--white) !important;
+}
+.about{
+    padding-top: 130px;
+    .about-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .about-info{
+        P{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--gray-text);
+            margin-top: 20px;
+            max-width: 463px;
+        }
+        }
+    }
+    img{
+        border-radius: 5px;
+        width: 657px;
+        height: 406px;
+        object-fit: cover;
+    }
 }
