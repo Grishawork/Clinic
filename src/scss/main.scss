@@ -116,3 +116,76 @@
         object-fit: cover;
     }
 }
+.work{
+    padding: 130px 0;
+    .work-box{
+        .work-nav{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            align-items: center;
+            margin-bottom: 42px;
+            button{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 140%;
+                color: var(--white);
+                padding: 13px 52px 13px 30px;
+                background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                border-radius: 30px;
+            }
+            button::after{
+                content: '';
+                position: absolute;
+                background: url('../img/arrow-white.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                transform: translate(5px, -50%); // + отступ
+            }
+        }
+        .work-info{
+            display: flex;
+            justify-content: space-between;
+            .work-item{
+                padding-bottom: 20px;
+                box-shadow: 0 4px 20px 0 rgba(52, 52, 52, 0.14);
+                border-radius: 0 0 5px 5px;
+                img{
+                    border-radius: 5px 5px 0 0;
+                }
+                h3{
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: var(--black);
+                    padding: 20px 20px 10px 20px
+                }
+                a{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-left: 20px;
+                    position: relative;
+                }
+                a::before{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                    bottom: 1px;
+                }
+            }
+        }
+    }
+}
