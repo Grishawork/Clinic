@@ -189,3 +189,202 @@
         }
     }
 }
+.our-stocks{
+    padding: 130px 0;
+    .stocks-parent {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 23px 20px;
+        grid-auto-flow: row;
+        margin-top: 40px;
+        grid-template-areas:
+            "A A b c"
+            "A A d e";
+        .stocks-div1 { 
+            grid-area: A; 
+            padding: 30px 30px 24px 30px;
+            background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+            border-radius: 5px;
+            position: relative;
+            h3{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 140%;
+                color: var(--white);
+                margin-bottom: 20px;
+            }
+            .stocks-info{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: var(--white);
+                max-width: 318px;
+                margin-bottom: 20px;
+            }
+            .duration{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: var(--white);
+                margin-bottom: 0;
+            }
+            .date{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                color: var(--white);
+                margin-bottom: 20px;
+            }
+            button{
+                padding: 9px 57px 9px 34px;
+                background: var(--white);
+                border-radius: 30px;
+                span{
+                    position: relative;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 140%;
+                    background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                span::after{
+                    position: absolute;
+                    content: '';
+                    background-image: url(../img/arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 18px;
+                    height: 18px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -23px;
+                }
+            }
+            img{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .stocks-div2 { 
+            grid-area: b;
+            background: #6567f2;
+        }
+        .stocks-div3 { 
+            grid-area: c;
+            background: var(--red);
+        }
+        .stocks-div4 { 
+            grid-area: d;
+            background: #ffdb5c;
+            h3{
+                color: var(--black) !important;
+            }
+            .duration{
+                color: var(--black) !important;
+            }
+            .date{
+                color: var(--black) !important;
+            }
+        }
+        .stocks-div5 { 
+            grid-area: e;
+            background: #27c8da;
+        }
+        .stocks-item{
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            h3{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: var(--white);
+                margin-bottom: 7px;
+            }
+            .duration{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 140%;
+                color: var(--white);
+            }
+            .date{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                color: var(--white);
+                margin-bottom: 48px;
+            }
+            button{
+                padding: 5px 15px;
+                background: var(--white);
+                border-radius: 30px;
+                span{
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 140%;
+                    background: linear-gradient(180deg, #3bb96d 0%, #279a59 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            img{
+                position: absolute;
+                bottom: 4px;
+                right: 0;
+                width: 139px;
+                height: 123px;
+            }
+        }
+    }
+}
+.hospital{
+    padding: 130px 0;
+    background: #f1f5f8;
+    .advantages{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        .advantages-item{
+            padding: 14px;
+            padding-right: 39px;
+            border-radius: 5px;
+            background: linear-gradient(180deg, #27c8da 0%, #24bfd0 100%);
+            display: flex;
+            align-items: center;
+            .circle{
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                background: var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+            }
+            p{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 140%;
+                color: var(--white);
+                max-width: 224px;
+            }
+        }
+    }
+    .hospital-info{}
+}
